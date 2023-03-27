@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://use.fontawesome.com/efc83ea599.js"></script>
+    <meta charset="UTF-8">
+    <title>Jewish Excuse Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-WaIg8btvO6NehjzVrOjFrC/Z8QwI0FmJjKzezuFNmOFW8Gv+IgSULNf/1UGRRjzTJPTPuEh4tO4+4YsJNAMyQw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/x-icon" href="icons/menorah.ico">
+
+    <meta property="og:title" content="Jewish Excuse Generator" />
+    <meta property="og:description" content="For yidden with commitment issues" />
+    <meta property="og:image" content="icons/happy_tu_bshvat_cropped.png" />
+    <meta property="og:url" content="www.itisajewishholidaytoday.com" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LL5HKKBDL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7LL5HKKBDL');
+    </script>
+  
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Jewish Excuse Generator</h1>
+      <label for="user-input" id="prompt-text">What do you need to get out of?</label>
+      <input type="text" placeholder="e.g., 'your kidney transplant'" id="user-input">
+      <button onclick="generateRandomString()">Generate excuse</button>
+      <div id="output"></div>
+      <div id="googleForm" style="display:none;">
+        <p>Have an idea for a Jewish excuse? Submit yours <a href="https://forms.gle/nrZkNcy4oseYH9Qy5">here</a>.</p>
+      </div>
+    </div>
+
+    <!-- <div class="bottom-bar">
+      <div class="align-left">Ricki Heicklen</div>
+      <ul class="social-icons">
+        <li><a href="https://www.rickiheicklen.com"><b>Ricki Heicklen</b></a></li>
+        <li><a href="https://github.com/RickiHeicklen"><i class="fa fa-github fa-lg"></i></a></li>
+        <li><a href="https://twitter.com/tradegal_"><i class="fa fa-twitter fa-lg"></i></a></li>
+      </ul>
+    </div> -->
+
+    <div id="bottom-bar">
+      <p class="alignleft">
+        <ul class="names">
+          <li>Site maintained by <a href="https://www.rickiheicklen.com">Ricki Heicklen</a>. Idea credits to <a href="https://adam.scherlis.com">Adam Scherlis</a>. Happy Tu B'Shevat <a href="https://www.amazon.com/gp/product/B09N1P6TD3/ref=ox_sc_act_image_6">shirt</a> courtesy of <s>late stage</s> middle high capitalism.</li>
+        </ul>
+      <p class="alignright">
+        <ul class="social-icons">
+          <li><a href="https://bayesshammai.substack.com/">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 606 606" preserveAspectRatio="xMidYMid meet">
+                <path fill="currentColor" d="M35 4L35 75L564 75L564 4L35 4M35 139L35 211L564 211L564 139L35 139M35 274L35 605C56.6208 598.76 78.3422 581.827 98 570.86L230 497.14C246.343 488.022 262.731 478.968 279 469.719C284.318 466.696 293.313 459.172 299.576 459.286C305.748 459.399 314.711 466.977 320 469.999C335.238 478.708 350.615 487.245 366 495.694C412.513 521.239 458.488 547.761 505 573.306C522.985 583.183 543.997 600.423 564 605L564 274L35 274z"/>
+              </svg>
+            </a>
+            </li>
+            <!-- <img src="icons/substack-logo.svg" style="width:15px;height:15px;"></a></li> -->
+          <li><a href="https://twitter.com/tradegal_"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a href="https://github.com/RickiHeicklen"><i class="fa fa-github fa-lg"></i></a></li>
+          <li><a href="https://www.rickiheicklen.com"><b>Ricki Heicklen</b></a></li>
+        </ul>
+      </p>
+      <div style="clear: both;"></div>
+    </div>
+
+<!-- 
+    <footer>
+      <p>My Name</p>
+      <a href="https://github.com/RickiHeicklen"><i class="fa fa-github fa-lg"></i></a>
+      <a href="https://twitter.com/tradegal_"><i class="fa fa-twitter fa-lg"></i></a>
+      <a href="https://www.rickiheicklen.com"><i class="fa fa-globe fa-lg"></i></a>
+    </footer> -->
+
+    <script src="javascript/hebrew_date.js"></script>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
